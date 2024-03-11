@@ -16,3 +16,7 @@ class RobertaLayerWithAdapter(RobertaLayer):
         sequence_output = self.adapter(sequence_output)
         # 返回修改后的输出（其他输出保持不变）
         return (sequence_output,) + self_outputs[1:]
+
+"""
+RoBERTa的每个RobertaLayer包含一个自注意力（self-attention）机制和一个前馈网络，这些层共同构成了RoBERTa的基础架构。
+"""
