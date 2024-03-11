@@ -32,3 +32,9 @@ class GPT2BlockWithAdapter(GPT2Block):
         # 返回修改后的输出（其他输出保持不变）
         outputs = (a,) + attn_outputs[1:]
         return outputs
+"""
+每个GPT2Block包含了一系列的自注意力（Self-Attention）和前馈网络（Feed-Forward）层，这些层共同构成了模型的基础架构。
+
+"""
+
+
